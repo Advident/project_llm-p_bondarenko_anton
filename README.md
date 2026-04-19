@@ -121,22 +121,22 @@ GET /health
 
 ## Скриншоты работы
 ### Регистрация пользователя
-![](./images/image.png)
+![](./screenshots/image.png)
 
 ### Логин и получение JWT
-![](./images/image-1.png)
+![](./screenshots/image-1.png)
 
 ### Авторизация в Swagger
-![](./images/image-2.png)
+![](./screenshots/image-2.png)
 
 ### Вызов POST /chat
-![](./images/image-3.png)
+![](./screenshots/image-3.png)
 
 ### Получение истории через GET /chat/history
-![](./images/image-4.png)
+![](./screenshots/image-4.png)
 
 ### Удаление истории через DELETE /chat/history
-![](./images/image-5.png)
+![](./screenshots/image-5.png)
 
 ## Проверка кода
 ruff check .
