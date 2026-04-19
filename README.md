@@ -33,8 +33,8 @@
 * ruff (линтер)
 
 ## Установка и запуск
-1. Установка uv
-pip install uv
+1. Установка uv  
+* pip install uv
 2. Инициализация проекта
 * uv init
 * uv venv
@@ -47,26 +47,25 @@ source .venv/bin/activate
 * uv pip compile pyproject.toml -o requirements.txt
 * uv pip install -r requirements.txt
 5. Настройка переменных окружения
-
 Создать файл .env в корне проекта:
 
-APP_NAME=llm-p
+APP_NAME=llm-p  
 ENV=local
 
-JWT_SECRET=super_secret_key_123
-JWT_ALG=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
+JWT_SECRET=super_secret_key_123  
+JWT_ALG=HS256  
+ACCESS_TOKEN_EXPIRE_MINUTES=60  
 
 SQLITE_PATH=./app.db
 
-OPENROUTER_API_KEY=ВАШ_API_KEY
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-OPENROUTER_MODEL=openai/gpt-4o-mini
-OPENROUTER_SITE_URL=https://example.com
-OPENROUTER_APP_NAME=llm-fastapi-openrouter
+OPENROUTER_API_KEY=ВАШ_API_KEY  
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1  
+OPENROUTER_MODEL=openai/gpt-4o-mini  
+OPENROUTER_SITE_URL=https://example.com  
+OPENROUTER_APP_NAME=llm-fastapi-openrouter  
 
-6. Запуск сервера
+6. Запуск сервера  
 uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
-Swagger будет доступен по адресу:
+Swagger будет доступен по адресу:  
 http://127.0.0.1:8000/docs
