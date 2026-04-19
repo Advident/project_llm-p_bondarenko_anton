@@ -46,7 +46,7 @@ source .venv/bin/activate
 4. Установка зависимостей
 * uv pip compile pyproject.toml -o requirements.txt
 * uv pip install -r requirements.txt
-5. Настройка переменных окружения
+5. Настройка переменных окружения  
 Создать файл .env в корне проекта:
 
 APP_NAME=llm-p  
@@ -121,22 +121,22 @@ GET /health
 
 ## Скриншоты работы
 ### Регистрация пользователя
-![](image.png)
+![](./images/image.png)
 
 ### Логин и получение JWT
-![](image-1.png)
+![](./images/image-1.png)
 
 ### Авторизация в Swagger
-![](image-2.png)
+![](./images/image-2.png)
 
 ### Вызов POST /chat
-![](image-3.png)
+![](./images/image-3.png)
 
 ### Получение истории через GET /chat/history
-![](image-4.png)
+![](./images/image-4.png)
 
 ### Удаление истории через DELETE /chat/history
-![](image-5.png)
+![](./images/image-5.png)
 
 ## Проверка кода
 ruff check .
