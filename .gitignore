@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Env variables
+.env
+
+# SQLite
+*.db
+
+# IDE
+.vscode/
+
+.lock
