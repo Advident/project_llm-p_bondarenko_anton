@@ -118,3 +118,7 @@ GET /health
   "max_history": 10,  
   "temperature": 0.7  
 }
+
+## Скриншоты работы
+### Регистрация пользователя
+![](image.png)
