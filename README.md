@@ -11,3 +11,23 @@
 * взаимодействие с внешним API (OpenRouter),
 * сохранение истории диалога,
 * архитектура с разделением ответственности (API → UseCases → Repositories → Services → DB).
+
+## Архитектура
+
+Проект построен по принципу разделения слоёв:
+
+* API (routes) — обработка HTTP-запросов
+* UseCases — бизнес-логика
+* Repositories — работа с базой данных
+* Services — интеграция с внешними API (OpenRouter)
+* DB — модели и подключение к базе
+
+## Стек технологий
+* FastAPI
+* SQLAlchemy (async)
+* SQLite
+* JWT (python-jose)
+* passlib (bcrypt)
+* httpx
+* uv (менеджер окружения)
+* ruff (линтер)
