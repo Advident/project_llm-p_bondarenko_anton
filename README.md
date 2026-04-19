@@ -138,110 +138,19 @@ GET /health
 ### Удаление истории через DELETE /chat/history
 ![](image-5.png)
 
+## Проверка кода
+ruff check .
 
+Результат:  
 
+All checks passed!
 
+## Вывод
 
+Реализовано backend-приложение с:
 
+* авторизацией
+* работой с базой данных
+* интеграцией с LLM
 
-
-📌 Описание проекта
-
-Серверное приложение на FastAPI, реализующее защищённый API для взаимодействия с большой языковой моделью (LLM) через сервис OpenRouter.
-
-В проекте реализованы:
-
-регистрация и аутентификация пользователей (JWT),
-хранение данных в базе SQLite,
-взаимодействие с внешним API (OpenRouter),
-сохранение истории диалога,
-архитектура с разделением ответственности.
-🧱 Архитектура
-
-Приложение построено по принципу разделения слоёв:
-
-API (routes) — обработка HTTP-запросов
-UseCases — бизнес-логика
-Repositories — доступ к данным
-Services — работа с внешними API
-DB — модели и база данных
-
-Такой подход упрощает поддержку и масштабирование проекта.
-
-⚙️ Используемые технологии
-FastAPI
-SQLAlchemy (async)
-SQLite
-JWT (python-jose)
-passlib (bcrypt)
-httpx
-uv
-ruff
-🚀 Установка и запуск
-1. Установка uv
-pip install uv
-2. Инициализация проекта
-uv init
-uv venv
-3. Активация окружения
-Windows
-.venv\Scripts\activate
-Linux / macOS
-source .venv/bin/activate
-4. Установка зависимостей
-uv pip compile pyproject.toml -o requirements.txt
-uv pip install -r requirements.txt
-5. Настройка переменных окружения
-
-Создать файл .env на основе .env.example:
-
-APP_NAME=llm-p
-ENV=local
-
-JWT_SECRET=your_secret
-JWT_ALG=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
-
-SQLITE_PATH=./app.db
-
-OPENROUTER_API_KEY=your_api_key
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-OPENROUTER_MODEL=openai/gpt-4o-mini
-OPENROUTER_SITE_URL=https://example.com
-OPENROUTER_APP_NAME=llm-fastapi-openrouter
-6. Запуск приложения
-uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-
-Swagger будет доступен по адресу:
-
-http://127.0.0.1:8000/docs
-
-🔐 Аутентификация
-
-Используется JWT:
-
-Пользователь регистрируется
-Выполняет вход
-Получает access_token
-Использует токен для доступа к защищённым эндпоинтам
-
-Авторизация выполняется через кнопку Authorize в Swagger.
-
-📡 Эндпоинты
-Auth
-POST /auth/register — регистрация
-POST /auth/login — логин
-GET /auth/me — текущий пользователь
-Chat
-POST /chat — запрос к LLM
-GET /chat/history — история сообщений
-DELETE /chat/history — очистка истории
-Health
-GET /health — проверка состояния сервера
-💬 Пример запроса
-{
-  "prompt": "Объясни простыми словами, что такое JWT",
-  "system": "Отвечай кратко",
-  "max_history": 10,
-  "temperature": 0.7
-}
+Проект готов к дальнейшему расширению.
