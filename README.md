@@ -122,3 +122,18 @@ GET /health
 ## Скриншоты работы
 ### Регистрация пользователя
 ![](image.png)
+
+### Логин и получение JWT
+![](image-1.png)
+
+### Авторизация в Swagger
+![](image-2.png)
+
+### Вызов POST /chat
+![](image-3.png)
+
+### Получение истории через GET /chat/history
+![](image-4.png)
+
+### Удаление истории через DELETE /chat/history
+![](image-5.png)
