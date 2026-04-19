@@ -87,13 +87,13 @@ POST /auth/register
 
 POST /auth/login
 
-Логин (OAuth2 форма)
+Логин
 
 GET /auth/me
 
 Получение текущего пользователя
 
-💬 Chat
+### Chat
 POST /chat
 
 Отправка запроса к LLM
@@ -106,15 +106,15 @@ DELETE /chat/history
 
 Очистка истории
 
-❤️ Health
+### Health
 GET /health
 
 Проверка состояния сервера
 
 🧪 Пример запроса к чату
 {
-  "prompt": "Объясни простыми словами, что такое JWT",
-  "system": "Отвечай кратко",
-  "max_history": 10,
-  "temperature": 0.7
+  "prompt": "Объясни простыми словами, что такое JWT",  
+  "system": "Отвечай кратко",  
+  "max_history": 10,  
+  "temperature": 0.7  
 }
